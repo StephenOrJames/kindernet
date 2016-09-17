@@ -1,8 +1,4 @@
-# PyCharm files
-.idea/
-
-# Development database file
 db.sqlite3
-
-# Python virtual environment
+.idea/
+__pycache__
 venv/
