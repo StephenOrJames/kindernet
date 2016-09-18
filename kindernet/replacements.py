@@ -5,7 +5,10 @@ REPLACEMENTS = {
     "nice": "rude",
     "friendly": "unfriendly",
     "behave": "misbehave",
-    "rocks": "sucks"
+    "rocks": "sucks",
+    "heavy": "light",
+    "old": "new",
+    "last": "first"
 }
 
 REPLACEMENTS.update({v: k for k, v in REPLACEMENTS.items()})
