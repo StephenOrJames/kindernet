@@ -1,4 +1,4 @@
-from kindernet_server import app, db
+from kindernet import app, db
 
 
 if __name__ == "__main__":

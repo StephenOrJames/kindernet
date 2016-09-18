@@ -1,11 +1,11 @@
 REPLACEMENTS = {
     "bad": "good",
-    "hate": "love"
-    "hard": "easy"
-    "rude": "nice"
-    "unfriendly": "friendly"
-    "misbehave": "behave"
-    "sucks": "rocks"
+    "hate": "love",
+    "easy": "hard",
+    "nice": "rude",
+    "friendly": "unfriendly",
+    "behave": "misbehave",
+    "rocks": "sucks"
 }
 
 REPLACEMENTS.update({v: k for k, v in REPLACEMENTS.items()})
