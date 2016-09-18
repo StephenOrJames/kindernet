@@ -1,6 +1,6 @@
 import unittest
 
-from app import convert
+from kindernet import convert
 
 
 class TestConversion(unittest.TestCase):
