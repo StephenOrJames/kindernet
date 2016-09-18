@@ -12,14 +12,14 @@
 
     <body>
         <header class="row">
-            <h1>Kinder<small>Inter</small>Net</h1>
+            <h1><a href="{{ url_for("index") }}">Kinder<small>Inter</small>Net</a></h1>
         </header>
         <main class="row">
             {% block main %}
             {% endblock %}
         </main>
         <footer class="row column text-center">
-            Made with <i class="fi-heart" style="color: red;"></i> at <a href="https://bigredhacks.com">BigRed//Hacks</a>.
+            Made with <i class="fi-heart"></i> at <a href="https://bigredhacks.com">BigRed//Hacks</a>.
         </footer>
         <script src="{{ url_for("static", filename="dist/js/app.js") }}"></script>
     </body>

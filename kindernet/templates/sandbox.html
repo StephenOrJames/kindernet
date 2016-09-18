@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="row column">
+        <h2>Play with our API! <i class="fi-wrench"></i></h2>
+    </div>
+    <form method="post">
+        <div class="row">
+            <label class="medium-6 columns">
+                Original:
+                <textarea rows="5" name="src">{{ src }}</textarea>
+            </label>
+            <label class="medium-6 columns">
+                Kind:
+                <textarea rows="5" name="dest" disabled="disabled">{{ dest }}</textarea>
+            </label>
+        </div>
+        <div class="row column">
+            <button class="button primary expanded" id="sandbox-submit">
+                <i class="fi-heart"></i> Make it Kind <i class="fi-heart"></i>
+            </button>
+        </div>
+    </form>
+{% endblock %}
+
+{% block extra_scripts %}
+    <script>
+        $("#sandbox-submit").onclick(function () {
+            console.log("Nooo!");
+        })
+    </script>
+{% endblock %}

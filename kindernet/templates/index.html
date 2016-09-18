@@ -3,8 +3,16 @@
 {% block main %}
     <section class="row column">
         <h2>What is it?</h2>
-        Tired of reading negative remarks on the
+        <p>
+            It seems the world wide web is now loaded with negativity nowadays.
+            Are you one of the many people who are tired of reading negative remarks on the internet?
+            Here's your solution! We'll try to make the web pages you visit positive, or remove the content if we aren't smart enough.
+        </p>
+        <p>
+            <a class="button success expanded" href="{{ url_for("sandbox") }}">Play In Our Sandbox</a>
+        </p>
     </section>
+
     <section class="row">
         <div class="column">
             <h2>I need it!</h2>
@@ -16,6 +24,41 @@
         <div class="medium-6 columns">
             <h3>Firefox Add-on</h3>
             <a class="button expanded alert disabled" href="#"><i class="fi-clock"></i> Coming <em>Really</em> Soon!</a>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="column">
+            <h2>I <del>hate</del><ins>love</ins> it!</h2>
+        </div>
+        <div class="medium-6 columns">
+            <h3>Send us a shout-out!</h3>
+            <form method="post">
+                <label>
+                    Email address:
+                    <input type="email" name="email-address" placeholder="you@example.com">
+                </label>
+                <label>
+                    Message:
+                    <textarea placeholder="I love it!"></textarea>
+                </label>
+                <button class="button expanded"><i class="fi-heart"></i> Share the love!</button>
+            </form>
+        </div>
+        <div class="medium-6 columns">
+            <h3>Why only Chrome and Firefox?</h3>
+            <p>
+                We're currently working as hard as we can to get our first official beta release out for Firefox users!
+                Once that's done, our team will be evaluating your feedback to determine which browsers to include next.
+            </p>
+
+            <h3>Good news, developers!</h3>
+            <p>
+                We're open source!
+                If you'd like to help develop our product, or simply learn more about how it works,
+                <a href="https://github.com/StephenOrJames/kindernet">visit our <i class="fi-social-github"></i> repository</a>!
+                We're always looking for positive people to help make our internet a kinder place!
+            </p>
         </div>
     </section>
 {% endblock %}

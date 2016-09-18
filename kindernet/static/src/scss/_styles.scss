@@ -4,15 +4,6 @@ body {
   background-color: $blue;
 }
 
-header {
-  background-color: $body-background;
-  border-radius: 1rem;
-
-  h1 {
-    font-variant: small-caps;
-  }
-}
-
 header,
 main,
 footer {
@@ -25,19 +16,42 @@ footer {
   }
 }
 
-section {
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
+header {
+  background-color: $body-background;
+  border-radius: 1rem;
+  margin-top: 0;
 
-  h2 {
-    background-color: $blue;
-    border-radius: .5rem;
-    color: $body-background;
-    padding: .5rem;
+  h1 {
+    font-variant: small-caps;
   }
 }
 
 footer {
   background-color: $body-background;
+  margin-bottom: 0;
+}
+
+h2 {
+  background-color: $blue;
+  border-radius: .5rem;
+  color: $body-background;
+  padding: .5rem;
+}
+
+section {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+i.fi-heart {
+  color: red;
+}
+
+del {
+  color: map-get($foundation-palette, alert);
+}
+
+ins {
+  color: map-get($foundation-palette, success);
 }
