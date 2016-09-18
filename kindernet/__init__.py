@@ -12,8 +12,8 @@ from flask import (
 )
 from flask_sqlalchemy import SQLAlchemy
 
-from replacements import REPLACEMENTS
-from kindernet_server.utils import slugify
+from .replacements import REPLACEMENTS
+from .utils import slugify
 
 
 app = Flask(__name__)
