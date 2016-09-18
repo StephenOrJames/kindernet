@@ -1,0 +1,37 @@
+{
+  "name": "foundation-sites-template-2",
+  "version": "1.0.0",
+  "description": "Custom template for new Foundation for Sites projects.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenOrJames/foundation-sites-template-2.git"
+  },
+  "author": "Stephen James <stephenorjames@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephenOrJames/foundation-sites-template-2/issues"
+  },
+  "homepage": "https://github.com/StephenOrJames/foundation-sites-template-2#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "compact": false
+  }
+}

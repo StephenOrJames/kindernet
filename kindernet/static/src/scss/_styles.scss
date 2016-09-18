@@ -1,0 +1,43 @@
+$blue: map-get($foundation-palette, primary);
+
+body {
+  background-color: $blue;
+}
+
+header {
+  background-color: $body-background;
+  border-radius: 1rem;
+
+  h1 {
+    font-variant: small-caps;
+  }
+}
+
+header,
+main,
+footer {
+  background-color: $body-background;
+  border-radius: 1rem;
+  border: 1rem solid $body-background;
+  margin: {
+    top: .5rem;
+    bottom: .5rem;
+  }
+}
+
+section {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    background-color: $blue;
+    border-radius: .5rem;
+    color: $body-background;
+    padding: .5rem;
+  }
+}
+
+footer {
+  background-color: $body-background;
+}

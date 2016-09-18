@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>KinderNet</title>
+
+        <link rel="stylesheet" href="{{ url_for("static", filename="dist/css/app.css") }}">
+    </head>
+
+    <body>
+        <header class="row">
+            <h1>Kinder<small>Inter</small>Net</h1>
+        </header>
+        <main class="row">
+            {% block main %}
+            {% endblock %}
+        </main>
+        <footer class="row column text-center">
+            Made with <i class="fi-heart" style="color: red;"></i> at <a href="https://bigredhacks.com">BigRed//Hacks</a>.
+        </footer>
+        <script src="{{ url_for("static", filename="dist/js/app.js") }}"></script>
+    </body>
+</html>

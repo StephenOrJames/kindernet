@@ -35,6 +35,16 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/sandbox", methods=["GET", "POST"])
+def sandbox():
+    src = ""
+    dest = ""
+    if request.method == "POST":
+        src = request.form.get("src", "")
+        dest = json.loads(api().data.decode())["text"]
+    return render_template("sandbox.html", src=src, dest=dest)
+
+
 @app.route("/api", methods=["POST"])
 def api():
     src = request.form.get("src", None)
